@@ -2,6 +2,7 @@ from pico2d import *
 import game_framework
 
 import game_world
+from bird import Bird
 from grass import Grass
 from boy import Boy
 
@@ -27,6 +28,8 @@ def init():
     boy = Boy()
     game_world.add_object(boy, 1)
 
+    birds = [Bird() for _ in range(10)]
+    game_world.add_objects(birds, 1)
 
 def finish():
     game_world.clear()
