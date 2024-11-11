@@ -100,7 +100,7 @@ class Run:
 
     @staticmethod
     def draw(boy):
-        boy.image.clip_draw(int(boy.frame) * 100, boy.actboy.pyion * 100, 100, 100, boy.x, boy.y)
+        boy.image.clip_draw(int(boy.frame) * 100, boy.action * 100, 100, 100, boy.x, boy.y)
 
 
 
